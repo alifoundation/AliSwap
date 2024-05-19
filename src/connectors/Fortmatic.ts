@@ -7,7 +7,7 @@ type FormaticSupportedChains = Extract<ChainId, ChainId.MAINNET | ChainId.ROPSTE
 
 const CHAIN_ID_NETWORK_ARGUMENT: { readonly [chainId in FormaticSupportedChains]: string | undefined } = {
   [ChainId.MAINNET]: undefined,
-  [ChainId.ROPSTEN]: 'holesky',
+  [ChainId.ROPSTEN]: 'ropsten',
   [ChainId.RINKEBY]: 'rinkeby',
   [ChainId.KOVAN]: 'kovan'
 }
